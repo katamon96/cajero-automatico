@@ -2,7 +2,7 @@ const cuentas = [
     { nombre: "Mali", saldo: 200, password: "123456" },
     { nombre: "Gera", saldo: 290, password: "987654" },
     { nombre: "Maui", saldo: 67, password: "asdfgh" },
-    { nombre: "Angel", saldo: 100, password: "hgfdsa" },
+    { nombre: "Angel", saldo: 100, password: "123456" },
 ];
 
 const form = document.querySelector('#loginForm');

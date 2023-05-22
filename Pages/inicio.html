@@ -42,7 +42,7 @@
                             <h5 class="modal-title" id="exampleModalLabel">Consulta de saldo</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body" id="modalSaldoCont">
+                        <div class="modal-body" id="modalSaldoCant">
                             <!--cuerpo de la modal-->
                         </div>
                         <div class="modal-footer">
@@ -61,17 +61,20 @@
                             <h5 class="modal-title" id="exampleModalLabel">Ingrese la cantidad a depositar</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body" id="modalIngresoCont">
+                        <div class="modal-body" id="modalIngresoCant">
+                             <!--cuerpo de la modal-->
                             <form id="formIngresar">
                                 <div class="mb-3">
                                     <label for="quantity"class="form-label">Monto</label>
                                     <input type="number" class="form-control" id="inputIngresar" name="formCantidad" min="1" max="950">
                                     </div>
                               </form>
+                              
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="submit" form="formIngresar" class="btn btn-primary">Enviar</button>
+                            <button type="submit" form="formIngresar" class="btn btn-primary" data-bs-target="#modalRetiro">Enviar</button>
+                            
                         </div>
                     </div>
                 </div>
@@ -86,12 +89,18 @@
                             <h5 class="modal-title" id="exampleModalLabel">Ingrese la Cantidad a Retirar</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            ... ...<!--cuerpo de la modal-->
+                        <div class="modal-body" id="modalRetiroCant">
+                            <!--cuerpo de la modal-->
+                            <form id="formRetirar">
+                                <div class="mb-3">
+                                    <label for="quantity"class="form-label">Monto</label>
+                                    <input type="number" class="form-control" id="inputIngresar" name="typeRetirar" min="1" max="950">
+                                    </div>
+                              </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary">Retirar</button>
+                            <button type="submit" form="formRetirar" class="btn btn-primary">Retirar</button>
                         </div>
                     </div>
                 </div>
